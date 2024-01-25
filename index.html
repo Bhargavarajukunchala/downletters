@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation-task</title>
+    <style>
+        
+        .firstword{
+            margin-left: 32%;
+            margin-top: 20%;
+            animation: word;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+            
+        }
+        .firstword span{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 30px;
+            opacity: 0;
+            letter-spacing: 10px;
+            animation-name: firstletter;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease 3s;
+        }
+        
+        @keyframes firstletter{
+            0%{
+                opacity: 0;
+               
+            }
+            100%{
+                opacity: 1;
+                position: static;
+            }
+
+        }
+        .firstword span:nth-child(1){
+            animation-delay: 1s;
+            position: relative;
+                top:-10vh;
+                color: red;
+        }
+        .firstword span:nth-child(2){
+            animation-delay: 1.5s;
+            position: relative;
+                top:-10vh;
+                color: orange;
+           
+        }
+        .firstword span:nth-child(3){
+            animation-delay: 2s;
+            position: relative;
+                top:-10vh;
+                color: orangered;
+        }
+        .firstword span:nth-child(4){
+            animation-delay: 2.5s;
+            position: relative;
+                top:-10vh;
+        }
+        .firstword span:nth-child(5){
+            animation-delay: 3s;
+            position: relative;
+                top:-10vh;
+                color:brown;
+        }
+        .firstword span:nth-child(6){
+            animation-delay: 3.5s;
+            position: relative;
+                top:-10vh;
+                color:yellowgreen
+        }
+        .firstword span:nth-child(7){
+            animation-delay: 4s;
+            position: relative;
+                top:-10vh;
+        }
+        .firstword span:nth-child(8){
+            animation-delay: 4.5s;
+            position: relative;
+                top:-10vh;
+                color: red;
+        }
+        .firstword span:nth-child(9){
+            animation-delay: 5s;
+            position: relative;
+                top:-10vh;
+                color: blueviolet;
+        }
+        .firstword span:nth-child(10){
+            animation-delay: 5.5s;
+            position: relative;
+                top:-10vh;
+                color: green;
+        }
+        .firstword span:nth-child(11){
+            animation-delay: 6s;
+            position: relative;
+                top:-10vh;
+                color: olive;
+        }
+        .firstword span:nth-child(12){
+            animation-delay: 6.5s;
+            position: relative;
+                top:-10vh;
+                color:lightcoral
+        }
+        .firstword span:nth-child(13){
+            animation-delay: 7s;
+            position: relative;
+                top:-10vh;
+        }
+        .firstword span:nth-child(14){
+            animation-delay: 7.5s;
+            position: relative;
+                top:-10vh;
+                color: rgb(152, 231, 74);
+        }
+        .firstword span:nth-child(15){
+            animation-delay: 8s;
+            position: relative;
+                top:-10vh;
+                color: yellow;
+        }
+        .firstword span:nth-child(16){
+            animation-delay: 8.5s;
+            position: relative;
+                top:-10vh;
+                color: orangered;
+        }
+        .firstword span:nth-child(17){
+            animation-delay: 9s;
+            position: relative;
+                top:-10vh;
+        }
+        @keyframes word{
+            0%{
+                
+
+            }
+            100%{
+                /* transform: scale(1.8); */
+                transform: rotate(360deg);
+                transition: all 2s;
+            }
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="firstword">
+    <span >K</span>
+    <span >U</span>
+    <span >N</span>    
+    <span >C</span>    
+    <span >H</span>    
+    <span >A</span>    
+    <span >L</span>    
+    <span >A</span>
+    <span >B</span>
+    <span >H</span>
+    <span >A</span>
+    <span >R</span>
+    <span >G</span>
+    <span >A</span>
+    <span >V</span>
+    <span >A</span>
+
+    </div>   
+
+</body>
+</html>
